@@ -1,24 +1,23 @@
 ---
-import {getCollection} from "astro:content"
+import AboutUs from "../components/AboutUs.astro";
+import Cta from "../components/Cta.astro";
+import Faq from "../components/Faq.astro";
+import Features from "../components/Features.astro";
+import Hero from "../components/Hero.astro";
+import Kurikulum from "../components/Kurikulum.astro";
+import NFT from "../components/NFT.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 
-const blogPosts = await getCollection("blog")
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		{
-			blogPosts.map(post => (
-				<h2>{post.data.title}</h2>
-				<a href={`/blog/${post.slug}/`}>Read More</a>
-			))
-		}
-	</body>
-</html>
+<MainLayout title="Kampus SekolahKripto">
+  <main>
+    <Hero />
+    <Features />
+    <!-- <NFT /> -->
+    <AboutUs />
+    <Kurikulum />
+    <Faq />
+    <Cta />
+  </main>
+</MainLayout>

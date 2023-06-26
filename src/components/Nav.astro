@@ -1,0 +1,139 @@
+---
+import Navbar from "../../src/components/Navbar.jsx";
+import navData from "../../src/data/navData"
+
+
+    
+
+---
+
+<nav>
+  <Navbar client:load />
+
+  <!-- <nav class="bg-gray-800">
+    <div class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="/" class="text-white text-lg font-semibold">Logo</a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-gray-300 hover:text-white focus:outline-none" id="mobile-menu-button">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-4"> -->
+          <!-- Map through an array of menu items -->
+          <!-- <ul class=" items-center hidden space-x-8 lg:flex">
+            {navData.map((nav) => (
+              <li >
+                <a
+                  href={nav.path}
+                  class="font-medium tracking-wide text-white hover:text-yellow-400 transition-colors duration-200"
+                >
+                  {nav.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ul class=" items-center hidden space-x-8 lg:flex">
+            <li>
+              <a
+                href="/"
+                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black bg-yellow-400 transition-color duration-200 rounded shadow-md  hover:bg-white focus:shadow-outline focus:outline-none"
+              >
+                Log Masuk
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- Mobile menu -->
+      <!-- <div
+        id="mobile-menu-overlay"
+        class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300"
+      ></div>
+      <div
+        id="mobile-menu"
+        class="fixed inset-y-0 right-0 w-64 bg-gray-800 transform translate-x-full overflow-y-auto ease-in-out transition-transform duration-300"
+      >
+        <div class="p-4">
+          <button class="text-gray-300 hover:text-white focus:outline-none" id="mobile-menu-close-button" >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="grid grid-cols-2 gap-4 mt-4"> -->
+            <!-- Map through an array of menu items -->
+            <!-- <ul class="space-y-4">
+              {navData.map((nav) => (
+                <li>
+                  <a
+                    href={nav.path}
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-yellow-400 hover:text-black"
+                  >
+                    {nav.name}
+                  </a>
+                </li>
+              ))}
+
+              <li>
+                <a
+                  href="/"
+                  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black  bg-yellow-400 transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
+                >
+                  Log Masuk
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  </nav>
+
+<!-- <script>
+  function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+      mobileMenu.classList.toggle('translate-x-0');
+      mobileMenuOverlay.classList.toggle('opacity-100');
+      mobileMenuOverlay.classList.toggle('pointer-events-auto');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    })
+
+    function isActive(url) {
+      return window.location.pathname === url;
+    }
+</script> -->
+
+

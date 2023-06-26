@@ -1,0 +1,52 @@
+---
+// interface Props {
+//   title: string;
+//   subheading: string;
+//   href: string;
+//   thumbnail: string;
+//   category: string;
+// }
+
+import { formatDate } from "../js/utils";
+
+// const { title, subheading, href, thumbnail, category } = Astro.props as Props;
+
+const {frontmatter, url, tagType} = Astro.props;
+const Tag = tagType;
+const { title, date, author, thumbnail, description, category} = frontmatter;
+---
+
+<article class="cursor-pointer overflow-hidden rounded-lg border border-t-0 border-jacarta-600 bg-jacarta-700">
+  
+  <a href={url}>
+    <img
+      src={thumbnail}
+      class="w-full rounded-md object-cover aspect-video"
+      alt={title}
+    />
+    <div class="p-5">
+      <Tag class="mb-4 font-bold text-white hover:text-accent tracking-wide normal-case line-clamp-2 text-xl">
+        {title}
+      </Tag>
+      <p class="mb-8 text-jacarta-200 text-sm line-clamp-2">
+     {description}
+      </p>
+      <div class="flex flex-wrap items-center space-x-2 text-sm text-jacarta-400">
+        <span><time datetime={formatDate(date)}>{formatDate(date)}</time></span>
+        <span>•</span>
+        <span>{author}</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<style>
+  .card {
+    transition: all 300ms;
+  }
+
+  .card:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+</style>

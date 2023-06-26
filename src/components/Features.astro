@@ -1,0 +1,104 @@
+---
+import World from "/assets/Saly-44.png";
+import Calender from "/assets/Saly-42.png";
+import Rocket from "/assets/Saly-43.png";
+import Correct from "/assets/Saly-26.png";
+import Money from "/assets/Saly-45.png";
+import PC from "/assets/Other 07.png";
+import Cart from "/assets/Other 16.png";
+---
+
+<section >
+  <div class="px-4  my-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24 relative ">
+      <!-- <div class="w-[250px] md:w-[550px] h-[300px] absolute bg-[#0500ff54] md:bg-[#7010bbcc] filter blur-[150px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "></div> -->
+  
+        <div class="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12 relative ">
+          <h2 class="max-w-lg mb-6 font-sans text-3xl px-5 sm:px-0 font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+            Ciri-Ciri Utama Kurikulum Kami
+          </h2>
+        </div>
+  
+        <div class="relative grid pt-10 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 z-10">
+  
+          {/* Left Column  */}
+          <div class="md:text-end text-white grid gap-y-14 mb-5 md:mb-0">
+            <div class="flex items-center lg:ml-10 flex-row-reverse md:flex-row">
+              <div>
+                <p class="font-bold">100% dalam Bahasa Melayu</p>
+                <p class="text-gray-400">
+                  Modul pendidikan blockchain ini sepenuhnya dalam Bahasa Melayu, memudahkan anda memahami dan menguasai teknologi terkini.
+                </p>
+              </div>
+              <img src={PC} alt="" class="w-10 h-10 ml-3 lg:mr-0 mr-3" />
+            </div>
+            <div class="flex items-center lg:mr-10 lg:ml-10 flex-row-reverse md:flex-row">
+              <div>
+                <p class="font-bold">Kandungan Up-to-date </p>
+                <p class="text-gray-400">
+                  Kandungan kursus kami sentiasa dikemas kini dengan maklumat dan teknologi terkini dalam dunia blockchain.
+                </p>
+              </div>
+              <img src={Rocket} alt="" class="w-10 h-10 ml-3 lg:mr-0 mr-3" />
+            </div>
+            <div class="flex items-center lg:ml-10 flex-row-reverse md:flex-row">
+              <div>
+                <p class="font-bold">100% Online</p>
+                <p class="text-gray-400">
+                  Mula dan belajar mengikut masa anda sendiri
+                </p>
+              </div>
+              <img src={Calender} alt="" class="w-10 h-10 ml-3 lg:mr-0 mr-3" />
+            </div>
+          </div>
+          {/* Center Column  */}
+          <div class="relative">
+  
+            <img src={World} alt="" class="relative md:w-[70%] w-[50%] mx-auto mt-[15 %] hidden md:block" />
+          </div>
+          {/* Right Column  */}
+          <div class="lg:text-start justify-center text-white grid gap-y-14 mt-5 md:mt-0 pt-5 lg:pt-0 ">
+            <div class="flex items-center lg:mr-10">
+            <img src={Money} alt="" class="w-10 h-10 mr-3" />
+              <div>
+                <p class="font-bold">100% Percuma!</p>
+                <p class="text-gray-400">
+                Modul ini percuma untuk anda semua!
+                </p>
+              </div>
+  
+            </div>
+            <div class="flex items-center lg:ml-10 ">
+            <img src={Correct} alt="" class="w-10 h-10 mr-3" />
+              <div>
+                <p class="font-bold">Interaktif dan Menarik</p>
+                <p class="text-gray-400">
+                  Platform ini dilengkapi dengan video, kuiz, dan aktiviti interaktif yang menarik untuk memperkukuh pemahaman anda tentang blockchain.
+                </p>
+              </div>
+  
+            </div>
+            <div class="flex items-center lg:mr-10">
+            <img src={Cart} alt="" class="w-10 h-10 mr-3" />
+              <div>
+                <p class="font-bold">Sijil Penyertaan              </p>
+                <p class="text-gray-400">
+                  Sebaik sahaja anda menamatkan modul ini, anda akan menerima sijil penyertaan sebagai pengiktirafan usaha anda.
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+    <style>
+        .ellipse3 {
+position: absolute;
+width: 550px;
+height: 300px;
+background: rgba(112, 16, 187, 0.8);
+/* background: white; */
+filter: blur(150px);
+}
+    </style>

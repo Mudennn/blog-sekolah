@@ -1,0 +1,43 @@
+---
+import {getCollection} from "astro:content"
+
+import MainLayout from "../layouts/MainLayout.astro";
+import BG from "/assets/Mask-group.png";
+
+const blogPosts = await getCollection("blog")
+---
+<MainLayout title="Blog">
+	<div class="p-4">
+	  <img
+		src={BG}
+		alt="MySekolah Kripto"
+		class="absolute -mt-[15%] rotate-180 w-full left-0 lg:block hidden -z-20"
+	  />
+	  <img
+		src={BG}
+		alt="MySekolah Kripto"
+		class="absolute mt-[100%]rotate-180 left-0 h-[550px] sm:block md:hidden -z-20"
+	  />
+	  <h2 class="lg:text-3xl text-3xl font-bold text-center text-white">Blog</h2>
+	  <h3 class="text-sm lg:text-base py-2 text-center text-jacarta-200 mt-2">
+		Pilih laluan anda untuk mempelajari asas web3!
+	  </h3>
+	</div>
+  
+	<div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
+	  <div class="px-4 py-8 mx-2 sm:mx-auto max-w-7xl lg:py-18">
+		<div
+		  class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
+		>
+		{
+			blogPosts.map(post => (
+				<h2 class="text-white">{post.data.title}</h2>
+				<a href={`/blog/${post.slug}/`} class="text-white">Read More</a>
+			))
+		}
+		  
+		</div>
+	  </div>
+	</div>
+  </MainLayout>
+  

@@ -1,0 +1,116 @@
+---
+import BG from "/assets/Mask-group.png";
+import CardModul from "../components/CardModul.jsx";
+import "../styles/style.css";
+
+import moduleData from "../data/moduleData.js";
+---
+
+<section >
+  <img
+    src={BG}
+    alt="MySekolah Kripto"
+    class="absolute -mt-[5%] rotate-180 left-0 lg:block hidden"
+  />
+  <img
+    src={BG}
+    alt="MySekolah Kripto"
+    class="absolute mt-[5%] rotate-180 left-0 h-[550px] sm:block md:hidden"
+  />
+  <img
+    src={BG}
+    alt="MySekolah Kripto"
+    class="absolute mt-[210%] left-0 h-[550px] sm:block md:hidden"
+  />
+  <div class="py-20 relative">
+    <div class="mx-auto p-4">
+      <h3 class="lg:text-3xl text-3xl font-bold text-center text-white">
+        Terokai Lalu Pembelajaran Kami
+      </h3>
+      <p class="text-sm lg:text-base py-2 text-center text-jacarta-200 mt-2">
+        Pilih laluan anda untuk mempelajari asas web3!
+      </p>
+    </div>
+    <!-- Card  -->
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
+      <div class="px-4 py-8 mx-2 sm:mx-auto max-w-7xl lg:py-18">
+        <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+          {
+            moduleData.slice(0, 3).map((data) => (
+              <div class="card cursor-pointer overflow-hidden bg-jacarta-700 shadow-lg rounded-lg ">
+                <div>
+                  <img
+                    src={data.image}
+                    class=" w-full rounded-md object-cover sm:aspect-video md:aspect-square"
+                    alt={data.name}
+                  />
+
+                  <div class="p-5 ">
+                    <p class="mb-1 text-white font-medium">{data.name}</p>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center w-full">
+      <a href="/modul" class="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">Lihat Semua Laluan</a>
+    </div>
+    <!-- <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
+      <div class="px-4 py-8 mx-2 sm:mx-auto max-w-7xl lg:py-18">
+        <div
+          class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
+        >
+          {
+            posts
+              .slice(0, 3)
+              .map((post) => (
+                <Card
+                  title={post.frontmatter.title}
+                  subheading={post.frontmatter.subheading}
+                  href={post.url}
+                  thumbnail={post.frontmatter.thumbnail}
+                />
+              ))
+          }
+          
+        </div>
+        <div class="flex justify-center mt-10 w-full">
+          <button class="button">Lihat Semua Laluan</button>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<style>
+  .button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button:hover {
+    /* background-color: #23c483; */
+    background-color: #eebc22;
+    box-shadow: 0px 15px 20px rgba(238, 188, 34, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  .button:active {
+    transform: translateY(-1px);
+  }
+</style>

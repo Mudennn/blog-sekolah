@@ -1,0 +1,97 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Logo from "/assets/Sekolah.png";
+import Logo2 from "/assets/SekolahKripto.png";
+import ekosistem from "../data/ekosistemData.js";
+---
+
+<MainLayout title="Tentang Kami">
+  <section class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
+    <div class="flex flex-wrap items-center mx-auto z-10">
+      <div
+        class="flex flex-col items-start lg:mt-12 lg:mb-14 lg:flex-grow lg:w-1/2 order-2 lg:order-1"
+      >
+        <p
+          class="mb-3 mt-5 text-base leading-relaxed mx-auto lg:mx-0 text-jacarta-200 tracking-widest"
+        >
+          TENTANG KAMI
+        </p>
+        <h1
+          class="text-4xl font-bold leading-none mx-auto lg:mx-0 text-white md:text-7xl lg:text-7xl"
+        >
+          MySekolah Kripto
+        </h1>
+        <p class="mt-8 text-base leading-relaxed lg:text-left text-center text-jacarta-200">
+          MySekolahKripto adalah pusat Inter-Operasi ilmu yang menyediakan
+          pembelajaran dan kesedaran tentang teknologi Blockchain, Aset Kripto,
+          DeFi, & NFT di Malaysia. Berkembang kukuh sejak 2017, MySekolahKripto
+          menyasarkan untuk menjadi pemain jangka panjang dalam dunia kripto
+          Malaysia: sebagai pendidik, pengupaya komuniti & penganjur projek.
+        </p>
+        <p class="mb-8 mt-4 text-base leading-relaxed lg:text-left text-center text-jacarta-200">
+          Kami berhasrat untuk memudahkan penggunaan Web3 melalui pendidikan di
+          Malaysia. Kami menyediakan pembelajaran berterusan melalui pelbagai
+          platform termasuk kelas fizikal, dengan sokongan geran daripada entiti
+          blockchain antarabangsa. Kami menggunakan model perniagaan Bukan Untuk
+          Untung di mana jualan dan geran yang diterima digunakan untuk
+          menyediakan kursus percuma untuk masyarakat Malaysia
+        </p>
+      </div>
+      <div class="w-full lg:max-w-lg lg:w-1/3 rounded-xl order-1 lg:order-2">
+        <div class="relative w-32 mx-auto sm:w-full md:w-48 max-w-lg my-8">
+          <div class="relative">
+            <img class="mx-auto w-full" alt="MySekolahKripto" src={Logo} />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISI  -->
+    <div class="flex flex-wrap items-center mx-auto z-10 lg:mb-14 ">
+      <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl order-2 lg:order-1">
+        <div class="relative w-full mx-auto max-w-lg lg:my-8 my-4">
+          <div class="relative">
+            <img class="mx-auto w-full" alt="MySekolahKripto" src={Logo2} />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-start lg:mt-12 lg:mb-16 lg:flex-grow lg:w-1/2 ml-0 lg:ml-5 order-1 lg:order-2"
+      >
+        <p
+          class="my-4 text-xl font-bold leading-none mx-auto lg:mx-0 text-white tracking-widest"
+        >
+          VISI KAMI
+        </p>
+        <p class="text-base leading-relaxed  lg:text-left text-center text-jacarta-200">
+          Visi kami adalah untuk berkembang di luar Malaysia dan untuk menembusi
+          pasaran global, dengan Asia Tenggara sebagai sasaran utama.
+        </p>
+      </div>
+    </div>
+    <!-- Ecosystem  -->
+    <div class="pb-12">
+      <h6
+        class="mb-8 mt-8  text-xl font-bold uppercase leading-relaxed text-center text-white tracking-widest"
+      >
+        Ekositem Kami
+      </h6>
+      <div
+        class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        {
+          ekosistem.map((ekosistem) => (
+            <div class="container bg-jacarta-700 rounded-lg border-2 border-[#ffffff39] hover:shadow-md hover:shadow-[#ffffff39]">
+            <div class="box h-52  p-8 rounded-lg">
+              <p class="font-bold text-lg text-white">{ekosistem.name}</p>
+              <p class="text-jacarta-200">{ekosistem.description}</p>
+            </div>
+          </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</MainLayout>
+

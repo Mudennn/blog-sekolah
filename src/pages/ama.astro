@@ -1,0 +1,22 @@
+---
+import VideoAma from "../components/VideoAma.jsx";
+import MainLayout from "../layouts/MainLayout.astro";
+import BG from "/assets/Mask-group.png";
+
+---
+
+<MainLayout title="ama">
+  <div>
+    <img
+    src={BG}
+    alt="MySekolah Kripto"
+    class="absolute -mt-[15%] rotate-180 w-full left-0 lg:block hidden -z-20"
+  />
+  <img
+    src={BG}
+    alt="MySekolah Kripto"
+    class="absolute mt-[100%]rotate-180 left-0 h-[550px] sm:block md:hidden -z-20"
+  />
+    <VideoAma client:load />
+  </div>
+</MainLayout>

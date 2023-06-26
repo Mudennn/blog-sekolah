@@ -1,0 +1,18 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+
+<MainLayout title="Page Not Found">
+    <div class="text-center text-white">
+        <h1 class=" text-[200px] text-bold ">404</h1>
+        <p>Err, kami tidak jumpa apa yang anda cuba cari.</p>
+        <button
+      onclick="window.location.href = '/'"
+      class="px-5 py-2 mt-10 bg-yellow-500 rounded-lg font-semibold text-sm text-black hover:bg-white hover:text-black"
+    >
+      Kembali ke Halaman Utama
+    </button>
+    </div>
+
+</MainLayout>
