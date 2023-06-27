@@ -68,10 +68,10 @@ import moduleData from "../data/moduleData.js";
               .slice(0, 3)
               .map((post) => (
                 <Card
-                  title={post.frontmatter.title}
-                  subheading={post.frontmatter.subheading}
-                  href={post.url}
-                  thumbnail={post.frontmatter.thumbnail}
+                  title={post.data.title}
+                  subheading={post.data.subheading}
+                  href={post.slug}
+                  thumbnail={post.data.thumbnail}
                 />
               ))
           }

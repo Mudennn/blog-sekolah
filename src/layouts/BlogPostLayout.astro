@@ -6,10 +6,10 @@ import { slugify, formatDate, generateCategoryData } from "../js/utils";
 import MainLayout from "./MainLayout.astro";
 
 
-const { frontmatter } = Astro.props;
-const allCategory = generateCategoryData(frontmatter.category)
+const { data } = Astro.props;
+const allCategory = generateCategoryData(data.category)
 console.log("🚀 ~ file: BlogPostLayout.astro:11 ~ allCategory:", allCategory)
-const { title, description, date, category, author, thumbnail } = frontmatter;
+const { title, description, date, category, author, thumbnail } = data;
 ---
 
 <MainLayout {title} {description}>
@@ -114,7 +114,7 @@ const { title, description, date, category, author, thumbnail } = frontmatter;
 <!-- <div class="containerVideo aspect-w-16 aspect-h-9">
       <iframe
         class="responsive-iframe"
-        src={frontmatter.video}
+        src={data.video}
         title="Pengenalan Blockchain"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>

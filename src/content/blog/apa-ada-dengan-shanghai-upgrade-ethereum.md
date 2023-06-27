@@ -3,14 +3,15 @@ title: Apa Ada Dengan ‘Shanghai upgrade Ethereum’?
 description: apa-ada-dengan-shanghai-upgrade-ethereum
 
 
-image : /assets/tezos3.jpg
-
-
+image : {
+    src: "/assets/tezos1.jpg",
+    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+}
 
 author: J4nt4nCrypto
 date: 2023-01-16
 
-tags: 
+category: 
 - Ethereum
 
 draft: false

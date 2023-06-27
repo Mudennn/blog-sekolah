@@ -1,10 +1,14 @@
 ---
-import {getCollection} from "astro:content"
+import {getCollection , CollectionEntry} from "astro:content"
 
 import MainLayout from "../layouts/MainLayout.astro";
 import BG from "/assets/Mask-group.png";
+import Card from "../components/Card.astro";
+
+import {formatBlogPosts} from "../js/utils" 
 
 const blogPosts = await getCollection("blog")
+const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
 ---
 <MainLayout title="Blog">
 	<div class="p-4">
@@ -30,9 +34,11 @@ const blogPosts = await getCollection("blog")
 		  class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
 		>
 		{
-			blogPosts.map(post => (
-				<h2 class="text-white">{post.data.title}</h2>
-				<a href={`/blog/${post.slug}/`} class="text-white">Read More</a>
+			formattedPosts.map(post => (
+				// <h2 class="text-white">{post.data.title}</h2>
+				// <a href={`/blog/${post.slug}/`} class="text-white">Read More</a>
+				<Card data={post.data} url={post.slug} tagType="h2"
+            />
 			))
 		}
 		  

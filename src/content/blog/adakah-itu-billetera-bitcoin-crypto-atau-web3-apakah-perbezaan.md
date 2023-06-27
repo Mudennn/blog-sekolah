@@ -3,12 +3,14 @@ title: Adakah Itu Billetera Bitcoin, Crypto, Atau Web3? Apakah Perbezaan?
 description: Buku W.A.G.M.I
 
 
-image : /assets/tezos1.jpg
-
+image : {
+    src: "/assets/tezos1.jpg",
+    alt: "Adakah Itu Billetera Bitcoin, Crypto, Atau Web3? Apakah Perbezaan?",
+}
 
 author: Mysekolahkripto
 date: 2023-05-31
-tags:  
+category:  
 - Web 3
 
 

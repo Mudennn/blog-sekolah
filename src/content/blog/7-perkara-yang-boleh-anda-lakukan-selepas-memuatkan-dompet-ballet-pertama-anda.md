@@ -4,8 +4,11 @@ description: Buku W.A.G.M.I
 author: Mysekolahkripto
 date: 2023-05-31
 
-image : /assets/tezos1.jpg
-tags: 
+image : {
+    src: "/assets/tezos1.jpg",
+    alt: "7 Perkara Yang Boleh Anda Lakukan Selepas Memuatkan Dompet Ballet Pertama Anda",
+}
+category: 
 - Wallet
 - Blockchain
 

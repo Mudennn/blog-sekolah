@@ -5,12 +5,13 @@ description: Test
 
 draft: false
 date: 2023-01-01
-tags:
-  - Web Development
-  - JavaScript
-  - Astro
-image: https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+category:
+  - Ethereum
 
+image : {
+    src: "/assets/tezos3.jpg",
+    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+}
 ---
 
 # Blog post 3

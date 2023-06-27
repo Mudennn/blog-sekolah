@@ -7,20 +7,20 @@
 //   category: string;
 // }
 
-import { formatDate } from "../js/utils";
+import {slugify, formatDate } from "../js/utils";
 
 // const { title, subheading, href, thumbnail, category } = Astro.props as Props;
 
-const {frontmatter, url, tagType} = Astro.props;
+const {data, url, tagType} = Astro.props;
 const Tag = tagType;
-const { title, date, author, thumbnail, description, category} = frontmatter;
+const { title, date, author, description, category, image} = data;
 ---
 
 <article class="cursor-pointer overflow-hidden rounded-lg border border-t-0 border-jacarta-600 bg-jacarta-700">
   
-  <a href={url}>
+  <a href={`/blog/${url}/`}>
     <img
-      src={thumbnail}
+      src={image.src}
       class="w-full rounded-md object-cover aspect-video"
       alt={title}
     />
@@ -37,6 +37,9 @@ const { title, date, author, thumbnail, description, category} = frontmatter;
         <span>{author}</span>
       </div>
     </div>
+    <small>
+      <a href={`/category/${slugify(category)}/`} class="text-white">{category}</a>
+    </small>
   </a>
 </article>
 
