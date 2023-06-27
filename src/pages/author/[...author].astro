@@ -1,0 +1,62 @@
+---
+import {getCollection , CollectionEntry} from "astro:content"
+import Card from "../../components/Card.astro";
+import { slugify, formatBlogPosts } from "../../js/utils";
+import MainLayout from "../../layouts/MainLayout.astro"
+
+export async function getStaticPaths() {
+const blogPosts = await getCollection("blog")
+  const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
+  const allAuthors = [
+    ...new Set(formattedPosts.map((post) => post.data.author).flat()),
+  ];
+  return allAuthors.map((author) => {
+    const authorPosts = formattedPosts.filter(
+      (post) => post.data.author === author
+    );
+    return {
+      params: { author: slugify(author) },
+      props: {
+        authorName: author,
+        posts: authorPosts,
+      },
+    };
+  });
+}
+
+interface Props {
+  posts: CollectionEntry<"blog">[];
+  authorName: string;
+}
+
+const { author } = Astro.params;
+const { posts, authorName} = Astro.props;
+
+---
+
+<MainLayout title= {authorName} >
+    <section>
+      <div class="p-4">
+          <h2 class="lg:text-3xl text-3xl font-bold text-center text-white">Kategori</h2>
+          <h3 class="text-sm lg:text-base py-2 text-center text-jacarta-200 mt-2">
+            Semua blog dari {authorName} 
+          </h3>
+        </div>
+      
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
+          <div class="px-4 py-8 mx-2 sm:mx-auto max-w-7xl lg:py-18">
+            <div
+              class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
+            >
+              {
+                posts.map((post) => (
+                <Card data={post.data} url={post.slugify} tagType="h2" />
+                ))
+              }
+            </div>
+          </div>
+      
+      
+        </div>
+    </section>
+</MainLayout>
