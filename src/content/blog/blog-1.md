@@ -5,8 +5,8 @@ description: Test
 
 draft: false
 date: 2023-01-01
-category:
-  - Ethereum
+category: 
+- Ethereum
 
 image : {
     src: "/assets/tezos3.jpg",

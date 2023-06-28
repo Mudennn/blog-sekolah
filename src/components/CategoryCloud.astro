@@ -1,0 +1,30 @@
+---
+import { getCollection, CollectionEntry } from "astro:content";
+import { formatBlogPosts, slugify } from "../js/utils";
+
+const blogPosts = await getCollection("blog");
+const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
+const allCategories = formattedPosts.map((cat) => cat.data.category).flat();
+
+const processedCats = allCategories.reduce((acc, category) => {
+    // check if the category exists in the acc
+    const value = category || 0;
+
+    return {
+        ...acc,
+        [category]: value.toString() + 1,
+    };
+}, {});
+
+const { showCount } = Astro.props;
+---
+
+<div class="flex gap-2">
+    {
+        Object.entries(processedCats).map(([key, val]) => (
+            <a class="rounded-md border-accent py-1 px-4 text-sm text-center font-semibold transition-all text-white border-2 hover:bg-accent-dark" href={`/category/${slugify(key)}/`}>
+                {key}
+            </a>
+        ))
+    }
+</div>

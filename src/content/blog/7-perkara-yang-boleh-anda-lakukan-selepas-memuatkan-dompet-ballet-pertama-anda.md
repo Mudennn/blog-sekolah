@@ -9,8 +9,7 @@ image : {
     alt: "7 Perkara Yang Boleh Anda Lakukan Selepas Memuatkan Dompet Ballet Pertama Anda",
 }
 category: 
-- Wallet
-- Blockchain
+- Kripto
 
 draft: false
 ---

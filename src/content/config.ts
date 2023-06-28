@@ -8,6 +8,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string().max(160, "For optimize SEO, please provide a description of 160 ch or less"),
     category: z.array(z.string()),
+    // category: z.enum(["Kripto", "Web 3", "Blockchain", "Ethereum"]),
     image: z.object({
       src: z.string(),
       alt: z.string(),
