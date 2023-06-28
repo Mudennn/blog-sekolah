@@ -9,7 +9,7 @@ const navData = [
     },
     {
         name : "Berita",
-        path : "/berita/",
+        path : "/blog/",
     },
     {
         name : "Buku WAGMI",

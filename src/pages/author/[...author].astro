@@ -50,7 +50,7 @@ const { posts, authorName} = Astro.props;
             >
               {
                 posts.map((post) => (
-                <Card data={post.data} url={post.slugify} tagType="h2" />
+                <Card data={post.data} url={post.slug} tagType="h2" />
                 ))
               }
             </div>
