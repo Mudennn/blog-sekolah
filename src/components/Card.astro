@@ -34,13 +34,13 @@ const { title, date, author, description, category, image} = data;
       <div class="flex flex-wrap items-center space-x-2 text-sm text-jacarta-400">
         <span><time datetime={formatDate(date)}>{formatDate(date)}</time></span>
         <span>•</span>
-        <span>{author}</span>
-        <a href={`/author/${slugify(author)}/`}>{author}</a>
+        <span><a href={`/author/${slugify(author)}/`} class="hover:underline" >{author}</a></span>
+      </div>
+      <div class="mt-4">
+        <a href={`/category/${slugify(category)}/`} class="text-accent text-[11px] rounded-md border-2 border-accent py-1 px-2 my-auto ">{category}</a>
       </div>
     </div>
-    <small>
-      <a href={`/category/${slugify(category)}/`} class="text-white">{category}</a>
-    </small>
+    
   </a>
 </article>
 

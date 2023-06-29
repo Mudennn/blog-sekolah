@@ -15,7 +15,7 @@ const VideoAma = () => {
   };
 
   return (
-    <div className=" px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 ">
+    <div className="mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 ">
       <div className="p-4 ">
         <h3 className=" lg:text-3xl text-3xl font-bold text-center text-white">
           Ask Me Anything Session!
@@ -29,7 +29,7 @@ const VideoAma = () => {
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           {ama.map((menu, i) => (
             <div key={i}>
-              <div className="card cursor-pointer overflow-hidden  bg-jacarta-700  shadow-lg rounded-lg ">
+              <div className="card1 cursor-pointer overflow-hidden  bg-jacarta-700  shadow-lg rounded-lg ">
                 <img
                   src={menu.image}
                   className=" w-full rounded-md object-cover aspect-square"
