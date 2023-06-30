@@ -1,19 +1,12 @@
 ---
-// interface Props {
-//   title: string;
-//   subheading: string;
-//   href: string;
-//   thumbnail: string;
-//   category: string;
-// }
-
 import {slugify, formatDate } from "../js/utils";
 
-// const { title, subheading, href, thumbnail, category } = Astro.props as Props;
+
 
 const {data, url, tagType} = Astro.props;
 const Tag = tagType;
 const { title, date, author, description, category, image} = data;
+// console.log("🚀 ~ file: Card.astro:17 ~ category:", category)
 ---
 
 <article class="cursor-pointer overflow-hidden rounded-lg border border-t-0 border-jacarta-600 bg-jacarta-700">
@@ -39,6 +32,16 @@ const { title, date, author, description, category, image} = data;
       <div class="mt-4">
         <a href={`/category/${slugify(category)}/`} class="text-accent text-[11px] rounded-md border-2 border-accent py-1 px-2 my-auto ">{category}</a>
       </div>
+      <!-- {
+        category.map((categoryie: any) => {
+        
+          return (
+          <a href={`/category/${slugify(category)}/`} class="bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase">
+                  <span>{categoryie}</span></a>
+          
+          )
+        })
+      } -->
     </div>
     
   </a>

@@ -2,7 +2,8 @@
 import { getCollection, CollectionEntry } from "astro:content";
 
 import MainLayout from "../../layouts/MainLayout.astro";
-import { slugify, formatDate,formatBlogPosts} from "../../js/utils" 
+import RelatedPost from "../../components/RelatedPost.astro";
+import { slugify, formatDate, formatBlogPosts, generateCategoryData} from "../../js/utils" 
 
 export async function getStaticPaths() {
     const blogPosts = await getCollection("blog");
@@ -18,6 +19,19 @@ const { title, description, date, category, author, image } = post.data;
 // console.log("🚀 ~ file: [slug].astro:14 ~ post:", post)
 const { Content } = await post.render();
 
+//related post
+const allPosts = await getCollection("blog");
+const formattedPosts = formatBlogPosts(allPosts, {
+  sortByDate: false,
+});
+const relatedPosts = formattedPosts
+  .filter(
+    (post: any) => post.data.category === category && post.data.title !== title
+  )
+  .slice(0, 3);
+console.log("🚀 ~ file: [slug].astro:32 ~ relatedPosts:", relatedPosts)
+
+// const allCategoriesData = generateCategoryData(post.data.categories)
 ---
 
 <MainLayout {title} {description}>
@@ -81,7 +95,29 @@ const { Content } = await post.render();
           href={`/category/${slugify(category)}/`}
           class="text-black bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase"
           >{category}</a
-        ></small
-      >
+        ></small>
+        <!-- <div>
+          {
+            post.data.category.map((categoryie: any) => {
+              return (
+                <li class="flex">
+                  <a href={`/category/${slugify(category)}/`} class="bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase">
+                    {categoryie}</a>
+                  </li>
+              )
+            })
+          }
+        </div> -->
+        <div>
+          {
+            relatedPosts.length > 0 && (
+              <aside class="container" aria-label="Related posts">
+                <h2 class="h3">Related Posts</h2>
+                <RelatedPost {relatedPosts} />
+              </aside>
+            )
+          }
+
+        </div>
     </div>
   </MainLayout>

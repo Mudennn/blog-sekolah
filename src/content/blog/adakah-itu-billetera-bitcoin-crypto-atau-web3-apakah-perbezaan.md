@@ -10,8 +10,9 @@ image : {
 
 author: Mysekolahkripto
 date: 2023-05-31
-category: 
-- Web 3
+category:
+    - Web 3
+    - Kripto
 
 
 draft: false

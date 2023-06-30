@@ -2,7 +2,7 @@
 import {getCollection , CollectionEntry} from "astro:content"
 
 import Card from "../../components/Card.astro";
-import { slugify, formatBlogPosts } from "../../js/utils";
+import { slugify, formatBlogPosts, generateCategoryData } from "../../js/utils";
 import MainLayout from "../../layouts/MainLayout.astro"
 
 export async function getStaticPaths(){
@@ -33,7 +33,7 @@ export async function getStaticPaths(){
 
 const { category } = Astro.params;
 const { name } = Astro.props;
-console.log("🚀 ~ file: [category].astro:36 ~ nama:", name)
+// console.log("🚀 ~ file: [category].astro:36 ~ nama:", name)
 
 
 const blogPosts = await getCollection("blog")
@@ -41,6 +41,7 @@ const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
 const catPosts = formattedPosts.filter(
   (post) => slugify(post.data.category) === category
 );
+
 
 ---
 
