@@ -9,17 +9,30 @@ import Card from "../../components/Card.astro";
 import Pagination from "../../components/Pagination.astro";
 import CategoryCloud from "../../components/CategoryCloud.astro";
 
-
-export const getStaticPaths: GetStaticPaths = async ({paginate}) => {
-  const blogPosts = await getCollection("blog");
-  const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await getCollection("blog");
+  const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(allPosts);
 
   return paginate(formattedPosts, {
     pageSize: 3,
-  })
+  });
 }
 
-const {page} = Astro.props;
+
+const { page } = Astro.props;
+console.log("🚀 ~ file: [...page].astro:23 ~ page:", page)
+
+// export const getStaticPaths: GetStaticPaths = async ({paginate}) => {
+//   const blogPosts = await getCollection("blog");
+//   const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
+
+//   return paginate(formattedPosts, {
+//     pageSize: 3,
+//   })
+// }
+
+
+// const {page} = Astro.props;
 // console.log("🚀 ~ file: [...page].astro:22 ~ page:", page)
 
 ---
@@ -52,12 +65,13 @@ const {page} = Astro.props;
             class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
           >
           {
-           page.data.map((post: any) => (
+            page.data.map((post) => (
             <Card data={post.data} url={post.slug} tagType="h2"
               />
             ))
           }
-            
+          
+           
           </div>
         </div>
         <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
