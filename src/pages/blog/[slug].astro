@@ -56,7 +56,7 @@ const allCategoriesData = generateCategoryData(category)
                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
               ></path>
             </svg>
-            <p class="text-sm">
+            <p class="text-sm hover:underline">
               <a href={`/author/${slugify(author)}/`}>{author}</a>
             </p>
           </div>
@@ -90,28 +90,18 @@ const allCategoriesData = generateCategoryData(category)
         <Content />
       </div>
       <!-- Category  -->
-      <small
-        ><a
-          href={`/category/${slugify(category)}/`}
-          class="text-black bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase"
-          >{category}</a
-        ></small>
         <div>
-          {
-            allCategoriesData.map(category => {
-              return(
-              <li><a href={`/category/${category.slug}/`}>{category.name}</a></li>
-              )
-            })
-            // allCategoriesData.map((categoryie: any) => {
-            //   return (
-            //     <li class="flex">
-            //       <a href={`/category/${slugify(category)}/`} class="bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase">
-            //         {categoryie}</a>
-            //       </li>
-            //   )
-            // })
-          }
+          <p class="text-accent my-2">Kategori</p>
+          <small class="mt-4">
+            {
+              allCategoriesData.map(category => {
+                return(
+                <a href={`/category/${category.slug}/`} class="text-accent text-[11px] rounded-md border-2 border-accent py-1 px-2 my-auto mr-2">{category.name}</a>
+                )
+              })
+              }
+          
+          </small>
         </div>
         <div>
           {
