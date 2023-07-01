@@ -6,6 +6,7 @@ description: Test
 draft: false
 date: 2023-01-01
 category: 
+- Web 3
 - Ethereum
 
 image : {

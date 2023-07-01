@@ -31,7 +31,7 @@ const relatedPosts = formattedPosts
   .slice(0, 3);
 console.log("🚀 ~ file: [slug].astro:32 ~ relatedPosts:", relatedPosts)
 
-// const allCategoriesData = generateCategoryData(post.data.categories)
+const allCategoriesData = generateCategoryData(category)
 ---
 
 <MainLayout {title} {description}>
@@ -96,18 +96,23 @@ console.log("🚀 ~ file: [slug].astro:32 ~ relatedPosts:", relatedPosts)
           class="text-black bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase"
           >{category}</a
         ></small>
-        <!-- <div>
+        <div>
           {
-            post.data.category.map((categoryie: any) => {
-              return (
-                <li class="flex">
-                  <a href={`/category/${slugify(category)}/`} class="bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase">
-                    {categoryie}</a>
-                  </li>
+            allCategoriesData.map(category => {
+              return(
+              <li><a href={`/category/${category.slug}/`}>{category.name}</a></li>
               )
             })
+            // allCategoriesData.map((categoryie: any) => {
+            //   return (
+            //     <li class="flex">
+            //       <a href={`/category/${slugify(category)}/`} class="bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase">
+            //         {categoryie}</a>
+            //       </li>
+            //   )
+            // })
           }
-        </div> -->
+        </div>
         <div>
           {
             relatedPosts.length > 0 && (

@@ -60,7 +60,7 @@ const catPosts = formattedPosts.filter(
               class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
             > 
               {
-                catPosts.map((post) => (
+                formattedPosts.map((post) => (
                 <Card data={post.data} url={post.slug} tagType="h2" />
                   
                 ))

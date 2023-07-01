@@ -10,6 +10,7 @@ image : {
 }
 category: 
     - Kripto
+    - Web 3
     
 
 draft: false

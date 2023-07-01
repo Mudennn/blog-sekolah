@@ -1,5 +1,5 @@
 ---
-import {slugify, formatDate } from "../js/utils";
+import {slugify, formatDate, generateCategoryData } from "../js/utils";
 
 
 
@@ -7,6 +7,8 @@ const {data, url, tagType} = Astro.props;
 const Tag = tagType;
 const { title, date, author, description, category, image} = data;
 // console.log("🚀 ~ file: Card.astro:17 ~ category:", category)
+
+const allCategoriesData = generateCategoryData(category)
 ---
 
 <article class="cursor-pointer overflow-hidden rounded-lg border border-t-0 border-jacarta-600 bg-jacarta-700">
@@ -29,19 +31,18 @@ const { title, date, author, description, category, image} = data;
         <span>•</span>
         <span><a href={`/author/${slugify(author)}/`} class="hover:underline" >{author}</a></span>
       </div>
+      <!-- Category -->
       <div class="mt-4">
-        <a href={`/category/${slugify(category)}/`} class="text-accent text-[11px] rounded-md border-2 border-accent py-1 px-2 my-auto ">{category}</a>
+        {
+          allCategoriesData.map(category => {
+            return(
+            <a href={`/category/${category.slug}/`} class="text-accent text-[11px] rounded-md border-2 border-accent py-1 px-2 my-auto mr-2">{category.name}</a>
+            )
+          })
+          }
+        <!-- <a href={`/category/${slugify(category)}/`} class="text-accent text-[11px] rounded-md border-2 border-accent py-1 px-2 my-auto ">{category}</a> -->
       </div>
-      <!-- {
-        category.map((categoryie: any) => {
-        
-          return (
-          <a href={`/category/${slugify(category)}/`} class="bg-white p-2 rounded-md font-bold hover:bg-yellow-400 uppercase">
-                  <span>{categoryie}</span></a>
-          
-          )
-        })
-      } -->
+      
     </div>
     
   </a>
