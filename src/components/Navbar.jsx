@@ -60,7 +60,7 @@ const Navbar = () => {
               </svg>
               </button> */}
           <button
-            className="ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent dark:border-transparent dark:bg-white/[.15] dark:hover:bg-accent"
+            className="ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white/[.15] transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent border-transparent"
             onClick={() => setIsMenuOpen(true)}
             aria-label="open mobile menu"
           >
@@ -94,7 +94,7 @@ const Navbar = () => {
                     <button
                       aria-label="Close Menu"
                       title="Close Menu"
-                      className="text-white p-2 -mt-2 -mr-2 transition-transform ease-in duration-75 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      className="mt-4 ml-2 flex h-10 w-10 items-center justify-center rounded-full border text-white border-jacarta-100 bg-white/[.15] transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent border-transparent"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <nav>
-                  <ul className="space-y-4 mt-20">
+                  <ul className="space-y-6 mt-20">
                     {navData.map((nav, i) => (
                       <li key={i}>
                         <a
