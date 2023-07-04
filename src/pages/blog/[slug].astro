@@ -18,6 +18,7 @@ const {post} = Astro.props;
 const { title, description, date, category, author, image } = post.data;
 // console.log("🚀 ~ file: [slug].astro:14 ~ post:", post)
 const { Content } = await post.render();
+// console.log("🚀 ~ file: [slug].astro:21 ~ Content:", Content)
 
 //related post
 const allPosts = await getCollection("blog");
@@ -29,7 +30,7 @@ const relatedPosts = formattedPosts
     (post: any) => post.data.category === category && post.data.title !== title
   )
   .slice(0, 3);
-console.log("🚀 ~ file: [slug].astro:32 ~ relatedPosts:", relatedPosts)
+// console.log("🚀 ~ file: [slug].astro:32 ~ relatedPosts:", relatedPosts)
 
 const allCategoriesData = generateCategoryData(category)
 ---
@@ -86,7 +87,7 @@ const allCategoriesData = generateCategoryData(category)
         />
       </header>
       <!-- Content  -->
-      <div class="mt-4 mb-6 text-white content text-base max-w-full">
+      <div class="mt-4 mb-6 text-white content  max-w-full">
         <Content />
       </div>
       <!-- Category  -->
@@ -116,3 +117,27 @@ const allCategoriesData = generateCategoryData(category)
         </div>
     </div>
   </MainLayout>
+
+  <!-- Style  -->
+<style is:global>
+  .content p {
+    @apply pt-4;
+  }
+  .content h1 {
+    font-size: 24px;  
+    font-weight: bold;
+  }
+  .content h2 {
+    padding-top: 16px;
+    font-size: 18px;  
+    font-weight: bold;
+  }
+
+  .content ul{
+    padding-top: 16px;
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  
+
+  </style>

@@ -16,7 +16,7 @@ category:
 draft: false
 ---
 
-## Heading 1
+
 Manfaatkan seluruh ekosistem Ballet. Jadi, anda telah menerima, membuka, dan memuatkan dompet Ballet pertama anda?
 
 Sekarang apa yang perlu dilakukan?

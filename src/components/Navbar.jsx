@@ -60,7 +60,7 @@ const Navbar = () => {
               </svg>
               </button> */}
           <button
-            className="ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white/[.15] transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent border-transparent"
+            className="ml-2 flex h-10 w-10 items-center justify-center rounded-full border text-white border-jacarta-100 bg-white/[.15] transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent border-transparent"
             onClick={() => setIsMenuOpen(true)}
             aria-label="open mobile menu"
           >
@@ -94,7 +94,7 @@ const Navbar = () => {
                     <button
                       aria-label="Close Menu"
                       title="Close Menu"
-                      className="mt-4 ml-2 flex h-10 w-10 items-center justify-center rounded-full border text-white border-jacarta-100 bg-white/[.15] transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent border-transparent"
+                      className="mt-5 -mr-1 flex h-10 w-10 items-center justify-center rounded-full border text-white border-jacarta-100 bg-white/[.15] transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent border-transparent"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -112,7 +112,7 @@ const Navbar = () => {
                       <li key={i}>
                         <a
                           href={nav.path}
-                          className="font-medium flex items-center justify-center tracking-wide text-white transition-colors duration-200 hover:text-accent"
+                          className="font-medium flex items-center justify-center tracking-wide text-white ease-in hover:text-accent"
                         >
                           {nav.name}
                         </a>

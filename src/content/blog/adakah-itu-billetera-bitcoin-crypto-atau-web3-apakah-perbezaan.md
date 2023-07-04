@@ -78,29 +78,29 @@ Seperti yang dapat Anda lihat, dompet Ballet kami dirancang untuk memenuhi kebut
 <p style="font-weight:bold; font-size:24px;">Tentang Ballet Wallet.</p>
 Ballet adalah perusahaan Amerika yang menyediakan solusi penyimpanan aset kripto yang mudah dan aman untuk pasar global. Ballet adalah tim di balik dompet kripto fisik pertama di dunia yang berfungsi untuk beberapa mata uang, tanpa menggunakan elektronik. Perusahaan ini didirikan pada tahun 2019 oleh Bobby Lee dan tim internasional yang terdiri dari veteran industri aset kripto. Ballet berbasis di Las Vegas, Nevada, Amerika Serikat, dan memiliki kantor di Shanghai, China.
 
-Untuk maklumat lanjut mengenai produk kami, sila lawati laman web kami di: <span class="text-yellow-400">https://www.ballet.com/</span>
+Untuk maklumat lanjut mengenai produk kami, sila lawati laman web kami di: <span class="text-accent">https://www.ballet.com/</span>
 
 Berinteraksi dengan kami di platform media sosial lain kami:
 
-Twitter: <span class="text-yellow-400">https://twitter.com/BalletCrypto/</span>
+Twitter: <span class="text-accent">https://twitter.com/BalletCrypto/</span>
 
-Facebook: <span class="text-yellow-400">https://www.facebook.com/balletcrypto.global/</span>
+Facebook: <span class="text-accent">https://www.facebook.com/balletcrypto.global/</span>
 
-Instagram: <span class="text-yellow-400">https://www.instagram.com/balletcrypto/</span>
+Instagram: <span class="text-accent">https://www.instagram.com/balletcrypto/</span>
 
-Telegram: <span class="text-yellow-400">https://t.me/BalletCrypto/</span>
+Telegram: <span class="text-accent">https://t.me/BalletCrypto/</span>
 
-Reddit: <span class="text-yellow-400">https://www.reddit.com/r/BalletCrypto/</span>
+Reddit: <span class="text-accent">https://www.reddit.com/r/BalletCrypto/</span>
 
-LinkedIn: <span class="text-yellow-400">https://www.linkedin.com/company/balletcrypto/</span>
+LinkedIn: <span class="text-accent">https://www.linkedin.com/company/balletcrypto/</span>
 
-Youtube: <span class="text-yellow-400">https://www.youtube.com/@BalletCrypto</span>
+Youtube: <span class="text-accent">https://www.youtube.com/@BalletCrypto</span>
 
-Weibo: <span class="text-yellow-400">https://www.weibo.com/BalletCrypto?from=myfollow_all</span>/
+Weibo: <span class="text-accent">https://www.weibo.com/BalletCrypto?from=myfollow_all</span>/
 
-Discord: <span class="text-yellow-400">https://discord.gg/e58FqyDA</span>
+Discord: <span class="text-accent">https://discord.gg/e58FqyDA</span>
 
-Anchor: <span class="text-yellow-400">https://anchor.fm/ballet-crypto</span>
+Anchor: <span class="text-accent">https://anchor.fm/ballet-crypto</span>
 
 Anda ingin menyertai Ballet Wallet Komuniti Malaysia,
 
@@ -108,4 +108,4 @@ Anda ingin menyertai Ballet Wallet Komuniti Malaysia,
 
 Boleh sertai melalui pautan ini atau Scan QR Code ini.
 
-Disini <span class="text-yellow-400">https://t.me/balletwalletmalaysiacommunity</span>
+Disini <span class="text-accent">https://t.me/balletwalletmalaysiacommunity</span>
