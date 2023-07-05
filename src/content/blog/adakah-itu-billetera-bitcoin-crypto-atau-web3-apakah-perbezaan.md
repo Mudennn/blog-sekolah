@@ -29,7 +29,7 @@ Untuk menetapkan perspektif, dalam setiap industri, akan selalu ada terminologi 
 
 Mari kita cuba membincangkan kesemuanya,
 
-<p style="font-weight:bold; font-size:24px;">Dompet Bitcoin.</p>
+## Dompet Bitcoin.
 Terminologi “dompet Bitcoin” adalah istilah yang pertama kali umum digunakan untuk menggambarkan pengelolaan kunci pribadi Anda. Mengingat bahwa Bitcoin adalah aset digital pertama dalam industri ini, tidak mengherankan bahwa istilah “dompet Bitcoin” umum digunakan pada awalnya. Hanya Bitcoin yang perlu Anda kelola. Istilah “kripto” atau “web3” bahkan belum ada atau dipahami saat itu.
 
 Seiring berjalannya waktu, banyak dompet Bitcoin mulai mendukung mata uang kripto lain yang berkembang seperti LTC, XRP, DASH, dan sebagainya. Namun, penggunaan utama mereka adalah untuk pengelolaan Bitcoin seseorang karena itu mungkin merupakan sebagian besar dari portofolio kripto mereka. Ketika seseorang menyebut “dompet Bitcoin,” itu juga sering diterima sebagai dompet berbagai mata uang bagi pengguna.
@@ -39,33 +39,33 @@ Saat ini, dompet Bitcoin telah menetapkan dirinya sebagai dompet Khusus Bitcoin.
 Jika Anda bertanya kepada penggemar Bitcoin yang sangat bersemangat apa yang termasuk dalam perilaku dompet mereka, kemungkinan kecenderungan berikut mungkin ada, tetapi tidak terbatas pada:
 
 
-<ul class="pl-4">
-    <li>1. Tidak menggunakan kembali alamat.</li>
-    <li>2. Membatasi transaksi pada rantai melalui solusi lapisan kedua.</li>
-    <li>3. Menggunakan layanan pencampuran untuk menyamarkan jejak transaksi.</li>
-    <li>4. Lebih suka menyimpan kunci pribadi secara offline pada solusi penyimpanan dingin.</li>
-</ul>
 
-<p style="font-weight:bold; font-size:24px;">Dompet Kripto.</p>
+- Tidak menggunakan kembali alamat
+- Membatasi transaksi pada rantai melalui solusi lapisan kedua
+- Menggunakan layanan pencampuran untuk menyamarkan jejak transaksi
+- Lebih suka menyimpan kunci pribadi secara offline pada solusi penyimpanan dingin
+
+
+## Dompet Kripto.
 Ketika mata uang kripto lain muncul di pasar, menggambarkannya sebagai “dompet mata uang kripto” atau hanya “dompet kripto” menjadi lebih populer. Bitcoin bukan satu-satunya daya tarik utama di sini. Popularitas ETH, DOGE, BNB, USDT, ADA, TRX, dan banyak lainnya sebenarnya menarik lebih banyak perhatian investor modal ventura yang ingin memanfaatkan aliran uang. Ekosistem dan komunitas pengembang besar berkembang pesat, dan pengguna ingin menangkap “pump” berikutnya.
 
 Dompet kripto dipasarkan khusus untuk ekosistem ini. Untuk memungkinkan seseorang memegang berbagai mata uang kripto di ponsel, desktop, web, atau perangkat keras.
 
 Saat ini, “dompet kripto” memiliki makna yang lebih umum. Secara singkat, interpretasinya mencakup “sebuah dompet yang memegang berbagai mata uang kripto” tanpa menyebutkan fungsi lain yang muncul ketika menyebutkan “dompet Bitcoin” atau “dompet web3”, yang akan kami jelaskan lebih lanjut.
 
-<p style="font-weight:bold; font-size:24px;">Dompet Web3.</p>
+## Dompet Web3.
 Mari kita melangkah ke tahun 2023, dan Anda akan melihat istilah “dompet web3” lebih sering digunakan. Ini dapat dikaitkan dengan popularitas penggunaan istilah “web3” yang juga populer untuk menggambarkan industri ini. Istilah “kripto” dianggap hanya berhubungan dengan mata uang kripto dan token, sedangkan “web3” adalah istilah tren baru yang mencakup tindakan dalam metaverse, NFT, dan sebagainya.
 
 Saat ini, “web3 natives” dapat digambarkan dengan kecenderungan dompet berikut:
 
 
-<ul class="pl-4">
-    <li>1. Dengan senang hati memberikan alamat untuk acara airdrop dan potensi pencetakan NFT.</li>
-    <li>2. Memberikan riwayat dompet kepada calon majikan sebagai cara untuk menilai performa perdagangan.</li>
-    <li>3. Memperkenalkan nama domain blockchain, seperti ENS, melalui saluran media sosial.</li>
-    <li>4. Merasa nyaman menyimpan kunci pribadi secara online pada dompet panas atau pertukaran terpusat.</li>
-    <li>5. Menandatangani transaksi dan bukti yang diperlukan untuk komunitas Discord yang menggunakan token atau NFT.</li>
-</ul>
+
+- Dengan senang hati memberikan alamat untuk acara airdrop dan potensi pencetakan NFT.
+- Memberikan riwayat dompet kepada calon majikan sebagai cara untuk menilai performa perdagangan.
+- Memperkenalkan nama domain blockchain, seperti ENS, melalui saluran media sosial.
+- Merasa nyaman menyimpan kunci pribadi secara online pada dompet panas atau pertukaran terpusat.
+- Menandatangani transaksi dan bukti yang diperlukan untuk komunitas Discord yang menggunakan token atau NFT.
+
 
 Seperti yang dijelaskan dalam tulisan blog ini, pengguna dompet ini cenderung dikategorikan sebagai pengguna DeFi dan penjual NFT karena sektor ini menuntut keterlibatan yang berkelanjutan. Sektor ini juga sangat diklasifikasikan sebagai arena yang didorong oleh uang di mana popularitas dan “skor degen” cenderung mendapatkan dukungan dalam komunitas. Ini adalah pengguna yang lebih didorong oleh keserakahan dan dapat dianggap sebagai “in it for the lambos” serta memiliki kecenderungan berkelanjutan untuk bertanya “kapan akan naik?”. Berita tentang peretasan online dan serangan phishing terhadap pihak ketiga terpusat tidak benar-benar mengganggu mereka.
 
@@ -75,37 +75,26 @@ Apakah Anda memerlukan dompet hanya untuk Bitcoin? Kami memiliki Seri REAL Bitco
 
 Seperti yang dapat Anda lihat, dompet Ballet kami dirancang untuk memenuhi kebutuhan web3 dengan cara yang mulus dan aman. Menyediakan fungsi yang seimbang untuk penggunaan dompet dari kedua fokus, yang dapat mencakup dari fokus privasi yang mendalam hingga fokus web3 yang lebih umum, adalah titik fokus desain kami. Namun, bagaimanapun Anda melihat keseimbangan saat ini, kami selalu terbuka untuk lebih banyak saran dalam meningkatkan pengalaman pengguna dengan dompet Ballet bagi semua pengguna dan pendatang baru. Seperti istilah dompet telah berkembang dari tahun ke tahun, demikian juga dompet kami.
 
-<p style="font-weight:bold; font-size:24px;">Tentang Ballet Wallet.</p>
+## Tentang Ballet Wallet.
 Ballet adalah perusahaan Amerika yang menyediakan solusi penyimpanan aset kripto yang mudah dan aman untuk pasar global. Ballet adalah tim di balik dompet kripto fisik pertama di dunia yang berfungsi untuk beberapa mata uang, tanpa menggunakan elektronik. Perusahaan ini didirikan pada tahun 2019 oleh Bobby Lee dan tim internasional yang terdiri dari veteran industri aset kripto. Ballet berbasis di Las Vegas, Nevada, Amerika Serikat, dan memiliki kantor di Shanghai, China.
 
-Untuk maklumat lanjut mengenai produk kami, sila lawati laman web kami di: <span class="text-accent">https://www.ballet.com/</span>
-
+Untuk maklumat lanjut mengenai produk kami, sila lawati laman web kami di: https://www.ballet.com/
 Berinteraksi dengan kami di platform media sosial lain kami:
 
-Twitter: <span class="text-accent">https://twitter.com/BalletCrypto/</span>
-
-Facebook: <span class="text-accent">https://www.facebook.com/balletcrypto.global/</span>
-
-Instagram: <span class="text-accent">https://www.instagram.com/balletcrypto/</span>
-
-Telegram: <span class="text-accent">https://t.me/BalletCrypto/</span>
-
-Reddit: <span class="text-accent">https://www.reddit.com/r/BalletCrypto/</span>
-
-LinkedIn: <span class="text-accent">https://www.linkedin.com/company/balletcrypto/</span>
-
-Youtube: <span class="text-accent">https://www.youtube.com/@BalletCrypto</span>
-
-Weibo: <span class="text-accent">https://www.weibo.com/BalletCrypto?from=myfollow_all</span>/
-
-Discord: <span class="text-accent">https://discord.gg/e58FqyDA</span>
-
-Anchor: <span class="text-accent">https://anchor.fm/ballet-crypto</span>
-
+Twitter: https://twitter.com/BalletCrypto/
+Facebook: https://www.facebook.com/balletcrypto.global/
+Instagram: https://www.instagram.com/balletcrypto/
+Telegram: https://t.me/BalletCrypto/
+Reddit: https://www.reddit.com/r/BalletCrypto/
+LinkedIn: https://www.linkedin.com/company/balletcrypto/
+Youtube: https://www.youtube.com/@BalletCrypto
+Weibo: https://www.weibo.com/BalletCrypto?from=myfollow_all
+Discord: https://discord.gg/e58FqyDA
+Anchor: https://anchor.fm/ballet-crypto
 Anda ingin menyertai Ballet Wallet Komuniti Malaysia,
 
 <img src="/assets/BP5-ballet-wallet.webp" alt="Adakah Itu Billetera Bitcoin, Crypto, Atau Web3? Apakah Perbezaan?" class="pt-4 w-1/2 mx-auto rounded-md">
 
 Boleh sertai melalui pautan ini atau Scan QR Code ini.
 
-Disini <span class="text-accent">https://t.me/balletwalletmalaysiacommunity</span>
+Disini https://t.me/balletwalletmalaysiacommunity

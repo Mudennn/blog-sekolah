@@ -12,7 +12,9 @@ author: J4nt4nCrypto
 date: 2023-01-16
 
 category: 
-- Ethereum
+    - Ethereum
+    - Web 3
+    - Blockchain
 
 draft: false
 ---

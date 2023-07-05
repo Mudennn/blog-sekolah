@@ -10,7 +10,9 @@ image : {
 }
 
 category: 
-- Ethereum
+    - Aset Digital
+    - Web 3
+    - Blockchain
 
 draft: false
 ---

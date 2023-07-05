@@ -3,7 +3,7 @@ title: "Integrasi Kripto yang Lancar: Wage3 dan Ballet Bergabung."
 description: Buku W.A.G.M.I
 
 author: Mysekolahkripto
-date: 2023-05-21
+date: 2023-05-31
 
 image : {
     src: "/assets/tezos1.jpg",
@@ -11,7 +11,9 @@ image : {
 }
 
 category: 
-- Ethereum
+    - Web 3
+    - Blockchain
+    - Kripto
 
 draft: false
 ---

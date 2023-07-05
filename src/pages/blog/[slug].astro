@@ -122,6 +122,7 @@ const allCategoriesData = generateCategoryData(category)
 <style is:global>
   .content p {
     @apply pt-4;
+    @apply text-[18px]
   }
   .content h1 {
     font-size: 24px;  
@@ -134,9 +135,21 @@ const allCategoriesData = generateCategoryData(category)
   }
 
   .content ul{
-    padding-top: 16px;
+    font-size: 18px;
+    /* padding-top: 8px; */
     list-style-type: decimal;
     list-style-position: outside;
+  }
+
+  .content ul li {
+    /* padding-bottom: 8px; */
+    margin-left: 16px;
+  }
+  .content a {
+    color: #8358FF;
+  }
+  .content a:hover {
+    text-decoration: underline;
   }
   
 

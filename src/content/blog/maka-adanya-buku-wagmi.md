@@ -11,7 +11,9 @@ image : {
 }
 
 category: 
-- Ethereum
+    - Web 3
+    - Blockchain
+    - Kripto
 
 draft: false
 ---

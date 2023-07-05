@@ -27,6 +27,16 @@ export async function getStaticPaths(){
             props: {name: "Ethereum"},
             
         },
+        {
+            params: {category: slugify("Aset Digital")},
+            props: {name: "Aset Digital"},
+            
+        },
+        {
+            params: {category: slugify("Bitcoin")},
+            props: {name: "Bitcoin"},
+            
+        },
        
     ]
 }

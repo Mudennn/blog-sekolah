@@ -7,7 +7,7 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().max(160, "For optimize SEO, please provide a description of 160 ch or less"),
-    category: z.array(z.string()),
+    category: z.array(z.enum(["Kripto", "Web 3", "Blockchain", "Ethereum", "Aset Digital", "Bitcoin"])),
     // category: z.enum(["Kripto", "Web 3", "Blockchain", "Ethereum"]),
     image: z.object({
       src: z.string(),
