@@ -5,62 +5,96 @@ import Card from "../../components/Card.astro";
 import { slugify, formatBlogPosts, generateCategoryData } from "../../js/utils";
 import MainLayout from "../../layouts/MainLayout.astro"
 
-export async function getStaticPaths(){
-    return [
-        {
-            params: {category: slugify("Kripto")},
-            props: {name: "Kripto"},
-        },
-       
-        {
-            params: {category: slugify("Web 3")},
-            props: {name: "Web 3"},
-            
-        },
-        {
-            params: {category: slugify("Blockchain")},
-            props: {name: "Blockchain"},
-            
-        },
-        {
-            params: {category: slugify("Ethereum")},
-            props: {name: "Ethereum"},
-            
-        },
-        {
-            params: {category: slugify("Aset Digital")},
-            props: {name: "Aset Digital"},
-            
-        },
-        {
-            params: {category: slugify("Bitcoin")},
-            props: {name: "Bitcoin"},
-            
-        },
-       
-    ]
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog').then((collection) =>
+    collection.reverse()
+  );
+  const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(allPosts);
+
+  const categories: string[] = [];
+
+  formattedPosts.forEach((post) => {
+    post.data.category.forEach((category) => {
+      categories.push(slugify(category));
+    });
+  });
+
+  return Array.from(new Set(categories)).map((category) => {
+    return {
+      params: { category },
+      props: {
+        category,
+        blogposts: formattedPosts.filter((post) =>
+          post.data.category.map((category) => slugify(category)).includes(category)
+        ),
+      },
+    };
+  });
 }
 
-const { category } = Astro.params;
-const { name } = Astro.props;
-// console.log("🚀 ~ file: [category].astro:36 ~ nama:", name)
+interface Props {
+  category: string;
+  blogposts: CollectionEntry<'blog'>[];
+}
+
+const { category, blogposts } = Astro.props;
+// export async function getStaticPaths(){
+//     return [
+//         {
+//             params: {category: slugify("Kripto")},
+//             props: {name: "Kripto"},
+//         },
+       
+//         {
+//             params: {category: slugify("Web 3")},
+//             props: {name: "Web 3"},
+            
+//         },
+//         {
+//             params: {category: slugify("Blockchain")},
+//             props: {name: "Blockchain"},
+            
+//         },
+//         {
+//             params: {category: slugify("Ethereum")},
+//             props: {name: "Ethereum"},
+            
+//         },
+//         {
+//             params: {category: slugify("Aset Digital")},
+//             props: {name: "Aset Digital"},
+            
+//         },
+//         {
+//             params: {category: slugify("Bitcoin")},
+//             props: {name: "Bitcoin"},
+            
+//         },
+       
+//     ]
+// }
+
+// const { category } = Astro.params;
+// const { name } = Astro.props;
 
 
-const blogPosts = await getCollection("blog")
-const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
-const catPosts = formattedPosts.filter(
-  (post) => slugify(post.data.category) === category
-);
+
+// const blogPosts = await getCollection("blog")
+// const formattedPosts: CollectionEntry<"blog">[] = formatBlogPosts(blogPosts);
+// const catPosts = formattedPosts.filter(
+//   (post) => slugify(post.data.category) === category
+// );
+
 
 
 ---
 
-<MainLayout title= {name} >
-    <section aria-label={`Semua blog tentang ${name}`}>
+<MainLayout title= {category} >
+    <section aria-label={`Semua blog tentang ${category}`}>
       <div class="p-4">
           <h2 class="lg:text-3xl text-3xl font-bold text-center text-white">Kategori</h2>
           <h3 class="text-sm lg:text-base py-2 text-center text-jacarta-200 mt-2 capitalize">
-            Semua blog tentang {name.replace(/-/g, " ")} 
+            Semua blog tentang {category.replace(/-/g, " ")} 
           </h3>
         </div>
       
@@ -70,7 +104,7 @@ const catPosts = formattedPosts.filter(
               class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
             > 
               {
-                formattedPosts.map((post) => (
+                blogposts.map((post) => (
                 <Card data={post.data} url={post.slug} tagType="h2" />
                   
                 ))
