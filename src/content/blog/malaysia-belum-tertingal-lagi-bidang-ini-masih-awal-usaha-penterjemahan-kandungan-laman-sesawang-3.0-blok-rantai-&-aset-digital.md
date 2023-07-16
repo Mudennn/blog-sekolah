@@ -1,6 +1,6 @@
 ---
 title: "Malaysia Belum Tertingal Lagi, Bidang Ini Masih Awal : Usaha Penterjemahan Kandungan Laman Sesawang 3.0, Blok Rantai & Aset Digital."
-description: What is NFT?
+description: Menyambung jambatan pengetahuan dalam ruang Web3.0 dan Blockchain di Malaysia. Membudayakan pembaca dengan wawasan dan terjemahan yang berharga.
 
 
 author:  Mysekolahkripto

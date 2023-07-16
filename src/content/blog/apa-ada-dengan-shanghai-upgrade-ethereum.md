@@ -1,6 +1,6 @@
 ---
 title: Apa Ada Dengan ‘Shanghai upgrade Ethereum’?
-description: apa-ada-dengan-shanghai-upgrade-ethereum
+description: Upgrade utama Ethereum (Ethereum 2.0) dengan peningkatan skalabiliti, keselamatan, dan kemampanan.
 
 
 image : {

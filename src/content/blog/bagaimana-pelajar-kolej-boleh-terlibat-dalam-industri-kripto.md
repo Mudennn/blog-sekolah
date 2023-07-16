@@ -1,6 +1,6 @@
 ---
 title: Bagaimana Pelajar Kolej Boleh Terlibat dalam Industri Kripto
-description: Buku W.A.G.M.I
+description: Terlibatlah dalam industri kripto yang berkembang pesat. Pelajari dan mula kembangkan kerjaya Anda dalam kriptocurrency.
 author: Mysekolahkripto
 date: 2023-05-31
 

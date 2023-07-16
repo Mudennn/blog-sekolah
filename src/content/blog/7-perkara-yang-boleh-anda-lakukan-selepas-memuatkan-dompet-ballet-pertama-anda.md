@@ -1,6 +1,6 @@
 ---
 title: 7 Perkara Yang Boleh Anda Lakukan Selepas Memuatkan Dompet Ballet Pertama Anda.
-description: Buku W.A.G.M.I
+description: Manfaatkan seluruh ekosistem Ballet. Dapatkan, simpan, dan aktifkan dompet fisik Ballet Anda. Jaga keamanan dan privasi dengan Mode Privasi. 
 author: Mysekolahkripto
 date: 2023-05-31
 

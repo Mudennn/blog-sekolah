@@ -1,6 +1,6 @@
 ---
 title: Adakah Itu Billetera Bitcoin, Crypto, Atau Web3? Apakah Perbezaan?
-description: Buku W.A.G.M.I
+description: Penyelesaian Serba Dalam Satu untuk Bitcoin, Kripto, dan Web3. Simpan dengan selamat, urus, dan bertransaksi dengan mudah. Terimalah masa depan dompet kripto.
 
 
 image : {

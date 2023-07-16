@@ -1,6 +1,6 @@
 ---
 title: Mengapa Perkhidmatan Bitcoin Fizikal Ballet Adalah Satu Perkara Besar.
-description: Buku W.A.G.M.I
+description: Perubahan daripada pertukaran kripto terpusat kepada penyelesaian penyimpanan beku yang dikawal sendiri seperti Ballet sedang mengubah industri ini. 
 
 
 image : {

@@ -1,6 +1,6 @@
 ---
 title: Bitcoin Ordinals, Kesemuanya Penceritaan & Pencerahan Yang Ada.
-description: Buku W.A.G.M.I
+description: Bitcoin Ordinals & Debat Ukuran Blok - Dampak & Kontroversi.
 
 
 image : {

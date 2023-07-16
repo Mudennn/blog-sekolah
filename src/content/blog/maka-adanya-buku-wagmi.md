@@ -1,6 +1,6 @@
 ---
 title: Maka Adanya Buku W.A.G.M.I
-description: Buku W.A.G.M.I
+description: Sumber pendidikan percuma tentang Emas, Blockchain, Aset Kripto, NFT, dan lain-lain. Dapatkan wawasan dari perkongsian dengan Sekolah Kripto.
 
 author: Mysekolahkripto
 date: 2022-08-02

@@ -1,6 +1,6 @@
 ---
 title: "Perdebatan Mata Wang: Fiat vs Kripto"
-description: Learn how to use decentralized wallet and Dex
+description: Ciri-ciri mata wang fiat dan mata wang kripto dibandingkan, menekankan potensi mata wang kripto sebagai bentuk wang.
 
 author: Ilham Qayyum
 date: 2022-10-08

@@ -1,6 +1,6 @@
 ---
 title: Ia membentuk cara kita memahami konsep, objek, dan situasi dalam kehidupan harian kita.
-description: Buku W.A.G.M.I
+description: Peningkatan Keselamatan untuk Penyimpanan mata wang kripto. Teroka sebab di sebalik perubahan terminologi ini dan implikasinya bagi komuniti kripto.
 
 author: Mysekolahkripto
 date: 2023-05-31

@@ -1,6 +1,6 @@
 ---
 title: "Tanggungjawap Melindungi Pelaburan : Dompet Aset Kripto, Kesedaran Pengurusan Kewangan Digital & Keselamatan Cyber."
-description: Buku W.A.G.M.I
+description: Terokai tanggungjawab individu dalam melindungi aset kripto, pengurusan kewangan digital, dan langkah-langkah keselamatan siber.
 
 author: Mysekolahkripto
 date: 2023-05-08 

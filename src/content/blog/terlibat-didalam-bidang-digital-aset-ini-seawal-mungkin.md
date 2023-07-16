@@ -1,6 +1,6 @@
 ---
 title: Terlibat Didalam Bidang Digital Aset Ini Seawal Mungkin.
-description: Buku W.A.G.M.I
+description: Teroka cara-cara bagi pelajar terlibat dalam dunia yang menarik aset digital, dari pendidikan hingga pelaburan dan peluang kerjaya.
 
 
 image : {

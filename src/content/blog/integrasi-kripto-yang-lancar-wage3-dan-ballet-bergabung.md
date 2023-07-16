@@ -1,6 +1,6 @@
 ---
 title: "Integrasi Kripto yang Lancar: Wage3 dan Ballet Bergabung."
-description: Buku W.A.G.M.I
+description: Pengalaman kripto yang lancar dan mudah.
 
 author: Mysekolahkripto
 date: 2023-05-31
