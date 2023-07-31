@@ -5,8 +5,8 @@ description: Peningkatan Keselamatan untuk Penyimpanan mata wang kripto. Teroka 
 author: Mysekolahkripto
 date: 2023-05-31
 image : {
-    src: "/assets/tezos1.jpg",
-    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+    src: "/assets/5-min.png",
+    alt: "Ia membentuk cara kita memahami konsep, objek, dan situasi dalam kehidupan harian kita",
 }
 
 category: 

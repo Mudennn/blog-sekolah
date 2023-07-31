@@ -6,8 +6,8 @@ author: Mysekolahkripto
 date: 2022-08-02
 
 image : {
-    src: "/assets/tezos1.jpg",
-    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+    src: "/assets/14-min.png",
+    alt: "Maka Adanya Buku W.A.G.M.I",
 }
 
 category: 

@@ -5,7 +5,7 @@ author: Mysekolahkripto
 date: 2023-05-31
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/9-min.png",
     alt: "7 Perkara Yang Boleh Anda Lakukan Selepas Memuatkan Dompet Ballet Pertama Anda",
 }
 category: 

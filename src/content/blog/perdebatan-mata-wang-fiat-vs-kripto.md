@@ -6,7 +6,7 @@ author: Ilham Qayyum
 date: 2022-10-08
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/13-min.png",
     alt: "Perdebatan Mata Wang: Fiat vs Kripto",
 }
 

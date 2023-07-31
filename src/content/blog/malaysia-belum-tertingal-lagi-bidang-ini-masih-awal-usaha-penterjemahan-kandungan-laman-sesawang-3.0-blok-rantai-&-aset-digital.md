@@ -7,8 +7,8 @@ author:  Mysekolahkripto
 date:  2023-01-25
 
 image : {
-    src: "/assets/tezos1.jpg",
-    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+    src: "/assets/11-min.png",
+    alt: "Malaysia Belum Tertingal Lagi, Bidang Ini Masih Awal : Usaha Penterjemahan Kandungan Laman Sesawang 3.0, Blok Rantai & Aset Digital",
 }
 
 

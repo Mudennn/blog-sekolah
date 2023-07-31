@@ -4,7 +4,7 @@ description: Penyelesaian Serba Dalam Satu untuk Bitcoin, Kripto, dan Web3. Simp
 
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/8-min.png",
     alt: "Adakah Itu Billetera Bitcoin, Crypto, Atau Web3? Apakah Perbezaan?",
 }
 

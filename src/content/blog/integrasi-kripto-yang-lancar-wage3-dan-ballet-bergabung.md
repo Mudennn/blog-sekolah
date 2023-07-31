@@ -6,8 +6,8 @@ author: Mysekolahkripto
 date: 2023-05-31
 
 image : {
-    src: "/assets/tezos1.jpg",
-    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+    src: "/assets/4-min.png",
+    alt: "Integrasi Kripto yang Lancar: Wage3 dan Ballet Bergabung",
 }
 
 category: 

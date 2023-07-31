@@ -4,7 +4,7 @@ description: Bitcoin Ordinals & Debat Ukuran Blok - Dampak & Kontroversi.
 
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/6-min.png",
     alt: "Bitcoin Ordinals, Kesemuanya Penceritaan & Pencerahan Yang Ada.",
 }
 

@@ -5,7 +5,7 @@ author: Mysekolahkripto
 date: 2023-05-31
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/7-min.png",
     alt: "Bagaimana Pelajar Kolej Boleh Terlibat dalam Industri Kripto",
 }
 category: 

@@ -4,7 +4,7 @@ description: Perubahan daripada pertukaran kripto terpusat kepada penyelesaian p
 
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/3-min.png",
     alt: "Mengapa Perkhidmatan Bitcoin Fizikal Ballet Adalah Satu Perkara Besar.",
 }
 

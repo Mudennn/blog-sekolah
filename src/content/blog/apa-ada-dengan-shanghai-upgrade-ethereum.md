@@ -4,7 +4,7 @@ description: Upgrade utama Ethereum (Ethereum 2.0) dengan peningkatan skalabilit
 
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/12-min.png",
     alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
 }
 

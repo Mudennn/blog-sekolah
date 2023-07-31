@@ -6,8 +6,8 @@ author: Mysekolahkripto
 date: 2023-05-08 
 
 image : {
-    src: "/assets/tezos1.jpg",
-    alt: "Apa Ada Dengan ‘Shanghai upgrade Ethereum’?",
+    src: "/assets/10-min.png",
+    alt: "Tanggungjawap Melindungi Pelaburan : Dompet Aset Kripto, Kesedaran Pengurusan Kewangan Digital & Keselamatan Cyber.",
 }
 
 

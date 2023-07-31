@@ -4,7 +4,7 @@ description: Teroka cara-cara bagi pelajar terlibat dalam dunia yang menarik ase
 
 
 image : {
-    src: "/assets/tezos1.jpg",
+    src: "/assets/2-min.png",
     alt: "Terlibat Didalam Bidang Digital Aset Ini Seawal Mungkin.",
 }
 
