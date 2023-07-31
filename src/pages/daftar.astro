@@ -1,0 +1,98 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+
+<MainLayout>
+          <div class="max-w-xl mx-auto">
+            <div class="text-white relative rounded-lg  bg-jacarta-800 p-8 shadow-lg sm:p-12 border-jacarta-600 border-2">
+              <h1 class="text-2xl font-bold text-center text-white mb-8">Daftar</h1>
+              <form action="" class="space-y-4">
+                <!-- NAMA PENUH -->
+                  <div class="space-y-1 text-sm">
+                      <label for="fullname" class="block text-white">
+                        Nama Penuh
+                      </label>
+                      <input
+                        type="text"
+                        class="hover:ring-accent/10 focus:ring-accent border-jacarta-600 border-2 bg-white text-jacarta-900  w-full rounded-md  px-4 py-3"
+                        name="fullname"
+                        placeholder="Nama Penuh"
+                      />
+                  </div>
+                  <!-- EMEL -->
+                  <div class="space-y-1 text-sm">
+                      <label for="email" class="block text-white">
+                        Emel
+                      </label>
+                      <input
+                        type="text"
+                        class="hover:ring-accent/10 focus:ring-accent border-jacarta-600 border-2 bg-white text-jacarta-900  w-full rounded-md  px-4 py-3"
+                        name="email"
+                        placeholder="Emel"
+                      />
+                  </div>
+                  <!-- PASSWORD -->
+                  <div class="space-y-1 text-sm">
+                      <label for="password" class="block text-white">
+                        Kata Laluan
+                      </label>
+                      <input
+                        type="password"
+                        class="hover:ring-accent/10 focus:ring-accent border-jacarta-600 border-2 bg-white text-jacarta-900  w-full rounded-md  px-4 py-3"
+                        name="password"
+                        placeholder="Kata Laluan"
+                      />
+                  </div>
+                  <!-- CONFIRM PASSWORD -->
+                  <div class="space-y-1 text-sm">
+                      <label for="username" class="block text-white">
+                        Mengesahkan Kata Laluan
+                      </label>
+                      <input
+                        type="password"
+                        class="hover:ring-accent/10 focus:ring-accent border-jacarta-600 border-2 bg-white text-jacarta-900  w-full rounded-md  px-4 py-3"
+                        name="confirm_password"
+                        placeholder="Mengesahkan Kata Laluan"
+                      />
+                  </div>
+                  <!-- BUTTON -->
+                  <button
+                    type="submit"
+                    class="w-full rounded-full my-2 bg-accent py-3 px-5 text-base text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                  >
+                    Buat Akaun
+                  </button>
+              </form>
+              <!-- LOG MASUK -->
+              <div class="text-white my-6 items-center justify-center flex gap-2">
+                Sudah ada akaun?
+                <a
+                  class="underline text-accent hover:text-white"
+                  href="/logmasuk/"
+                >
+                  Log Masuk
+                </a>
+                
+              </div>
+              <!-- TERM AND CONDITION, PRIVACY POLICY -->
+              <div class="text-center text-sm text-grey-dark mt-4">
+                  Dengan mendaftar, anda bersetuju menerima
+                  <br/>
+                  <a
+                  class="no-underline border-b border-grey-dark text-yellow-400"
+                  href="#"
+                >
+                  Syarat Perkhidmatan
+                </a>{" "}
+                dan
+                <a
+                  class="no-underline border-b border-grey-dark text-yellow-400"
+                  href="#"
+                >
+                  Dasar Privasi
+                </a>
+              </div>         
+            </div>     
+          </div>
+</MainLayout>
