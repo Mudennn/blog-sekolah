@@ -2,10 +2,13 @@
 import CardModul from "../components/CardModul.jsx";
 import MainLayout from "../layouts/MainLayout.astro";
 import BG from "/assets/Mask-group.png";
+import Image1 from "/assets/convo.svg";
+import Image2 from "/assets/book.svg";
+import Image3 from "/assets/globe.svg";
 ---
 
 <MainLayout title="Modul">
-  <div class="p-4">
+ 
     <img
       src={BG}
       alt="MySekolah Kripto"
@@ -14,37 +17,68 @@ import BG from "/assets/Mask-group.png";
     <img
       src={BG}
       alt="MySekolah Kripto"
-      class="absolute mt-[100%]rotate-180 left-0 h-[550px] sm:block md:hidden -z-20"
+      class="absolute mt-[100%] rotate-180 left-0 h-[550px] sm:block md:hidden -z-20"
     />
-    <section
-      class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 text-white"
-    >
-      <div class="flex flex-wrap items-center mx-auto max-w-7xl">
-        <h1
-          class="text-4xl text-center font-bold leading-none text-white md:text-6xl lg:text-6xl"
-        >
-          Meneroka Potensi Teknologi Web3 dan Blockchain
-        </h1>
-        <p
-          class="mb-8 mt-5 text-base leading-relaxed text-center text-jacarta-200"
-        >
-          Membuka pintu menuju pembelajaran yang membolehkan anda untuk
-          memahami, menguasai, dan berinovasi dalam teknologi web3 yang sedang
-          berkembang dengan kursus-kursus terkini dari Kampus SekolahKripto!
-        </p>
-        <h2>Gambaran tentang modul ini</h2>
-        <p>Kursus Pengenalan kepada Teknologi Blockchain adalah langkah pertama anda ke dalam dunia web3. Dalam kursus ini, 
-          anda akan mempelajari asas-asas blockchain, konsep yang utama untuk teknologi ini. </p>
-        <p>  Anda akan meneroka pelbagai kegunaan blockchain yang mengubah industri, 
-          memahami kelebihan dan kekurangan, serta pertimbangan keselamatan dan privasi. </p>
-          
-          <p>Direka bentuk untuk semua peringkat pemahaman, kursus ini menggunakan kaedah pembelajaran interaktif dan praktikal, 
-          yang melibatkan kajian kes dan projek dunia sebenar. Setelah selesai, anda akan mempunyai asas yang kukuh dalam teknologi 
-          blockchain dan pemahaman tentang bagaimana ia akan membentuk masa depan industri.</p> 
-          
-          <p>Sertai sekarang untuk mengakses pengetahuan 
-          terkini dan membuka pintu kepada peluang baharu dalam dunia web3 dan teknologi blockchain.</p>
-      </div>
-    </section>
-  </div>
+    <!-- HERO -->
+      <section class="flex flex-wrap items-center justify-center mx-auto max-w-7xl px-4 py-12 sm:px-6 md:px-12 lg:px-24 text-white">
+        <div class="h-[100vh]">
+          <h1
+            class="mt-20 text-4xl text-center font-bold leading-none md:text-6xl lg:text-6xl"
+          >
+            Meneroka Potensi Teknologi Web3 dan Blockchain
+          </h1>
+          <p
+            class="mb-14 mt-5 text-base leading-relaxed text-center text-jacarta-200"
+          >
+            Membuka pintu menuju pembelajaran yang membolehkan anda untuk
+            memahami, menguasai, dan berinovasi dalam teknologi web3 yang sedang
+            berkembang dengan kursus-kursus terkini dari Kampus SekolahKripto!
+          </p>
+          <div class="flex items-center justify-center">
+            <a href="/" class="rounded-full bg-accent py-3 px-5 text-base text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
+                Sertai Sekarang!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GAMBARAN TENTANG MODUL INI -->
+      <section class="w-full bg-jacarta-800">
+        <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
+          <div class="flex items-center justify-center flex-wrap md:flex-nowrap mx-auto max-w-7xl gap-4">
+            <div class="flex flex-col items-start mr-8 lg:flex-grow lg:w-1/3  z-10 ease-in-out  text-white">
+              <h2 class=" text-3xl font-bold mb-4" >
+              Kelebihan <br>Kursus Kami
+              </h2>
+                <p class="text-jacarta-300 text-sm ">  Kami menyediakan pembelajaran terkini, relevan yang memberikan anda keunggulan dalam memahami dan menerapkan teknologi Web3. </p>
+            </div>
+            
+            <div class="w-full">
+              <div class="grid justify-center grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-jacarta-800 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-80 border border-jacarta-600 text-white px-4 pb-6 pt-4">
+                  <img src={Image1} alt="Kampus Sekolah Kripto" >
+                  <p class="my-2">Dikendalikan oleh Pakar</p>
+                  <p class="text-sm text-jacarta-200">Belajar dari pakar industri Web3 dalam pembelajaran interaktif</p>
+                </div>
+                <div class="bg-jacarta-800 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-80 border border-jacarta-600 text-white px-4 pb-6 pt-4">
+                  <img src={Image2} alt="Kampus Sekolah Kripto" >
+                  <p class=" my-2">Pembelajaran Praktikal</p>
+                  <p class="text-sm text-jacarta-200">Terapkan pengetahuan anda secara efektif dalam dunia sebenar.</p>
+                </div>
+                <div class="bg-jacarta-800 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-80 border border-jacarta-600 text-white px-4 pb-6 pt-4">
+                  <img src={Image3} alt="Kampus Sekolah Kripto" >
+                  <p class=" my-2">Komunity Aktif</p>
+                  <p class="text-sm text-jacarta-200">Interaksi dengan komuniti untuk dapatkan sokongan dan inspirasi.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        
+      
+    
 </MainLayout>
