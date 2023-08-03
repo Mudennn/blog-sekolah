@@ -69,7 +69,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               width="24"
               height="24"
-              className="h-4 w-4 fill-jacarta-700 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
+              className="h-4 w-4 fill-white transition-colors group-hover:fill-white group-focus:fill-white "
             >
               <path fill="none" d="M0 0h24v24H0z" />
               <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
