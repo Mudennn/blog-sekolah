@@ -28,3 +28,6 @@
     height: 100%;
   }
 
+.heroTextShadow{
+  text-shadow: 4px 4px 100px rgba(255, 255, 255, 0.4);
+}

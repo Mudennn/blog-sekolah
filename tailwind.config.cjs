@@ -12,6 +12,7 @@ module.exports = {
 			"accent-light": "#9E7CFF",
 			"accent-lighter": "#B9A0FF",
 			"light-base": "#F5F8FA",
+			teal: "#8AE5CF",
 			green: "#10b981",
 			orange: "#FEB240",
 			"orange-bright": "#FA6D1E",
