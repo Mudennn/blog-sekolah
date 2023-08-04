@@ -35,7 +35,7 @@ const Navbar = () => {
               href="/"
               className="rounded-full bg-white py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume"
             >
-              Log Masuk
+              Mula Belajar
             </a>
           </li>
         </ul>
